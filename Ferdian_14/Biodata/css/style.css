@@ -1,0 +1,136 @@
+:root {
+  --Utama: #33e0d2;
+  --backg: rgb(254, 144, 8);
+  --second: #f70202;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--backg);
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 3px solid var(--Utama);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+.navbar .navbar-title a {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+span {
+  color: var(--Utama);
+}
+.navbar .navbar-title a:hover {
+  color: var(--second);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 0.8rem;
+}
+.navbar .navbar-nav a:hover {
+  color: var(--Utama);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.1rem solid var(--Utama);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.4);
+}
+
+.navbar .nav-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .nav-extra a:hover {
+  color: var(--Utama);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+
+/*Hero Section*/
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url('../image/header.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position:relative;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 65%;
+  }
+}
+/* Tablet */
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #409bad;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+    color: rgb(0, 0, 0);
+    
+  }
+
+
+}
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+  
+}
