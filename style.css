@@ -1,0 +1,17 @@
+h1 {
+    color: white;
+}
+ 
+
+body {
+    background-color: beige;
+}
+.video-container {
+    width: 640px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #212020;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
