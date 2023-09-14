@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    background-color: rgb(149, 198, 226);
+  }
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size:x-large;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 600;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+div.kiw {
+    text-align: center;
+}
+</style>
+<title>List film</title>
+</head>
+<body>
+<div class="kiw">
+<h2>My favorite film</h2>
+<a href="https://www.instagram.com/faxxtirr/">@Faxxtirr</a>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+      <video src="silent voice.mp4" controls width="650" height="500"></video>
+      <div class="desc">Silent voice</div>
+    </div>
+  </div>
+
+<div class="responsive">
+  <div class="gallery">
+    <video src="suzume.mp4" controls width="650" height="500"></video>
+    <div class="desc">suzume</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <video src="weathering with you.mp4" controls width="650" height="500"></video>
+    <div class="desc">weathering with you</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <video src="your name.mp4" controls width="650" height="500"></video>
+    <div class="desc">Your Name</div>
+  </div>
+
+<div class="clearfix"></div>
+</div>
+</body>
+</html>
