@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Insidious</title>
+            <body>
+                <marquee bgcolor="cyan" width="1350"scrollamount="7"><h1>Selamat Datang Silahkan Dilihat
+                   Website nya</h1></marquee>
+                <style>
+                  table, th, td {
+                    border: 1px solid black;
+                  }
+                  </style>
+                  </head>
+                  <body>
+                  <center><table height="450" width="1000" controls>
+                    <tr>
+                      <th colspan="4">PPWB</th>
+                    </tr>
+                    <tr>
+                      <th>NO</th>
+                      <th  colspan="4">ISI BIODATA ANDA DISINI</th>
+                    </tr>
+                    <tr>
+                      <td><center>1</center></td>
+                      <td colspan="3">Nama: Ilham Maulana</td>
+                    </tr>
+                    <tr>
+                      <td><center>2</center></td>
+                      <td colspan="3">Kelas: XI PPLG 1</td>
+                    </tr>
+                    <tr>
+                    <td><center>3</center></td>
+                      <td colspan="3">Absen: 15</td>   
+                    </tr>    
+                    <tr>
+                      <th colspan="4">Tugas</th>
+                    </tr>              
+                    <tr>
+                      <th>
+                        <p><h1>Silahkan Click Play Pada Audio Tersebut :)</h1></p>
+                        <audio controls>
+                          <source src="C:\Users\Ilham\Downloads\insidious 3.mp3"
+                           type="audio/mpeg">
+                          Browsermu tidak mendukung tag audio, upgrade donk!
+                      </audio></th>
+                      <th>
+                        <p><h1>Selamat Menikmati Vidionya</h1></p>
+                        <video width="400" height="250" controls>
+                          <source src="C:\Users\Ilham\Downloads\insidious 3 .mp4" 
+                          type="video/mp4">
+                          Your browser does not support the video tag.</th>
+                      <th><img src="C:\Users\Ilham\Downloads\insiidous 3.jpg" 
+                          style="width:450px;height:350px;"></th>
+                    </tr>
+                  </table>
+                  </center>
+                  <marquee bgcolor="cyan" width="1340"scrollamount="7"><h1>Terimah Kasih Sudah 
+                    Melihat Datang lah kembali:)</h1></marquee>
+            </body>
+    </head>
+</html>
