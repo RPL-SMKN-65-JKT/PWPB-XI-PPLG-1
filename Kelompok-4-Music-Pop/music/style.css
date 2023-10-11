@@ -1,0 +1,369 @@
+* {
+    scroll-behavior: smooth;
+}
+
+
+.judul {
+    margin-top: 5cm;
+}
+
+.bannertext {
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    left: 25%;
+    color: white;
+    font-size: 100px;
+    padding: 25px;
+}
+
+.banner-card {
+    margin-top: 3cm;
+    padding: 25px;
+    width: 100%;
+    align-items: center;
+}
+
+.banner {
+    background-size: cover;
+    background-image: url(images/banner2.jpg);
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+}
+
+.section {
+    color: #444;
+    padding: 2cm;
+    margin-top: 2cm;
+
+}
+
+.jumbotron {
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(images/banner.jpeg);
+
+}
+
+.audio {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    font-weight: bold;
+
+}
+
+.music {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgb(0, 255, 76), rgb(0, 162, 255));
+    font-weight: bold;
+}
+
+.arcticmonkeys {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(images/arcticm.jpeg);
+    font-weight: bold;
+}
+
+.taylor {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(images/taylorr.jpeg);
+    font-weight: bold;
+}
+
+.bruno {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(images/brunoms.jpeg);
+    font-weight: bold;
+}
+
+.weekend {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(images/weekend.jpeg);
+    font-weight: bold;
+
+}
+
+.player {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1cm;
+}
+
+.wrapper {
+    width: 80%;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.details {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.track-art {
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border-radius: 5px;
+}
+
+.now-playing {
+    font-size: 1rem;
+}
+
+.track-name {
+    font-size: 2.5rem;
+}
+
+.track-artist {
+    margin-top: 5px;
+    font-size: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.active {
+    color: linear-gradient(to right, #03fc56, #1dc5fd);
+}
+
+.repeat-track,
+.random-track,
+.playpause-track,
+.prev-track,
+.next-track {
+    padding: 25px;
+    opacity: 0.8;
+    transition: opacity .2s;
+}
+
+.repeat-track:hover,
+.random-track:hover,
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+    opacity: 1.0;
+}
+
+.slider_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seek_slider,
+.volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: black;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 3px solid #3774FF;
+    cursor: grab;
+    border-radius: 100%;
+}
+
+.seek_slider:hover,
+.volume_slider:hover {
+    opacity: 1.0;
+}
+
+.seek_slider {
+    width: 60%;
+}
+
+.volume_slider {
+    width: 30%;
+}
+
+.current-time,
+.total-duration {
+    padding: 10px;
+}
+
+i.fa-volume-down,
+i.fa-volume-up {
+    padding: 10px;
+}
+
+i,
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward,
+p {
+    cursor: pointer;
+}
+
+.randomActive {
+    color: black;
+}
+
+.rotate {
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.loader {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader .stroke {
+    background: #f1f1f1;
+    height: 150%;
+    width: 10px;
+    border-radius: 50px;
+    margin: 0 5px;
+    animation: animate 1.4s linear infinite;
+}
+
+@keyframes animate {
+    50% {
+        height: 20%;
+        background: #4286f4;
+    }
+
+    100% {
+        background: #4286f4;
+        height: 100%;
+    }
+}
+
+.tracks {
+    padding: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.4cm;
+    margin-left: 1cm;
+    margin-bottom: 2cm;
+    margin-right: 10cm;
+    width: 35cm;
+    border: 1px solid transparent;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.tracks::-webkit-scrollbar {
+    display: none;
+}
+
+.tracks .song:not(:first-child) {
+    margin-top: 1em;
+}
+
+.tracks .song {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+    padding: 0 5px;
+    border-radius: 0 20px 20px 20px;
+    box-shadow: 0.1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.tracks .song .more {
+    margin-left: 1.2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tracks .song .song_info p:nth-child(2) {
+    font-size: 0.8em;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.tracks .song #play_btn {
+    height: 50px;
+    width: 50px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background: none;
+    color: #000000;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+        -5px -5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.tracks .song button i {
+    font-size: 1.5em;
+}
+
+.tracks .song:not(:first-child) {
+    margin-top: 15px;
+}
+
+.tracks .song .img {
+    height: 70px;
+    width: 80px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.tracks .song .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
