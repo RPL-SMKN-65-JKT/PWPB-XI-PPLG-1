@@ -1,0 +1,26 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-style: unset; 
+}
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+}
+    .Home {
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+}
+    .about {
+    width: 110px;
+    height: 110px;
+    background-color: lightgreen;
+}
+    .Select {
+    width: 10px;
+    height: 10px;
+    background-color: purple;
+}
