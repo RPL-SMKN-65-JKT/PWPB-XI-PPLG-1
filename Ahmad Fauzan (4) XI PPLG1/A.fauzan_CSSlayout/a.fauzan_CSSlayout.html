@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="a.fauzan_CSSlayout.css">
+    <title>tugas pokoknya</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="box">
+    <h1>welkom tooo Website ojangg</h1>
+    <p>Ini tuhh ceritanya contoh kotak dengan CSS yang menggunakan properti box-sizing, border-width, margin, dan padding.</p>
+  </div>
+  <div class="box right-box">
+    <h2>ini ceritanya kotak samping nya biar keren aja hehe :)</h2>
+    <p>ini kotaknya di pakein display flex biar bisa disebelah kanan ukurannya juga diaturjadi muat di container</p>
+  </div>
+  <div class="box bottom-box">
+    <h2>Kotak terakhirrr</h2>
+    <p>ini kotaknyaaa jadii bulat sedikitt karena ada border radiusnyaa yaa man temann</p>
+    <p>sekiannn man temannn thenkyuuuu</p>
+  </div>
+</div>
+<div class="card">
+    <h2>Input Nilai donggg buu</h2>
+    <input type="text" id="nilai" max="100" placeholder="Masukkan nilai..." >
+    <button onclick="tampilkanNilai()">Submit nilai</button>
+</div>
+
+<script>
+function tampilkanNilai() {
+    var nilai = document.getElementById("nilai").value;
+    if(nilai<=76){
+        alert("astaghfirullah " + nilai + " yaudah deh ntar coba lagi");
+    }else{
+        alert("yey nilaii sayaaa " + nilai + " thenkyuuu buu hasnaa");
+    }
+    
+}
+</script>
+
+
+</body>
+</html>

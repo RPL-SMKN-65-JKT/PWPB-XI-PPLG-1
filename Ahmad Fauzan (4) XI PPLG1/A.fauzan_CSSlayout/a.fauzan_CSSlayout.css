@@ -1,0 +1,52 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    box-sizing: border-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #333;
+    margin: 20px;
+    padding: 20px;
+    background-color: aqua;
+    width: calc(50% - 40px);
+}
+
+.right-box {
+    background-color: lightblue;
+}
+
+.bottom-box {
+    width: calc(100% - 40px);
+    background-color: lightgreen;
+    border-radius: 20px;
+}
+
+.box h1, .box h2 {
+    color: #333;
+}
+
+.box p {
+    color: #666;
+}
+
+.card {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    background-color: limegreen;
+    border-radius: 5px;
+    padding: 20px;
+    width: 200px;
+    margin: auto;
+    margin-top: 50px;
+}
