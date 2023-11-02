@@ -1,0 +1,48 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+div {
+  width: 600px;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+
+.judul {
+  margin-top: 150px;
+  background-color: aqua;
+  padding: 10px;
+  width: 110px;
+}
+.container {
+  display: flex;
+}
+
+.container p {
+  font-size: 1.4rem;
+  margin: auto;
+  padding-left: 150px;
+  width: 390px;
+  border-bottom: 5px solid #000;
+  margin-bottom: 50px;
+}
+
+.judul2 {
+  margin-top: 150px;
+  background-color: yellow;
+  width: 110px;
+  padding: 10px;
+}
+
+.satu {
+  margin-top: 40px;
+  background-color: aqua;
+  padding: 10px;
+  border: 5px solid blueviolet;
+}
+
+.dua {
+  background-color: blanchedalmond;
+  padding: 30px;
+  border: 10px dashed greenyellow;
+}
