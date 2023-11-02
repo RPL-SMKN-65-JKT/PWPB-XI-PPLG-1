@@ -1,0 +1,54 @@
+
+.satu {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    border-style: solid;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.dua {
+    width: 200px;
+    height: 200px;
+    background-color: lightskyblue;
+    border-style: dashed;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.tiga {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-style: dotted;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.empat {
+        width: 200px;
+        height: 200px;
+        background-color: grey;
+        border-style: double;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+
+.lima {
+        width: 200px;
+        height: 200px;
+        background-color: black;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
