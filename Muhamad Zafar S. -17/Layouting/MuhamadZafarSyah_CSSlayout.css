@@ -97,8 +97,7 @@ a {
   background-color: #e74c3c;
 }
 .heading {
-  display: grid;
-  place-items: center;
+  text-align: center;
   padding-top: 1.875rem;
   font-size: 1.8rem;
   font-weight: bold;
