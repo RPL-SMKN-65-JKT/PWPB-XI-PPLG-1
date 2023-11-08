@@ -1,0 +1,36 @@
+.cerita {
+    background-color: #ffafaf;
+    padding: 20px;
+    border: 5px solid aqua;
+    margin: 10px;
+}
+
+.kisah {
+    background-color: #f87777;
+    padding: 20px;
+    border: 5px dashed aqua;
+    margin: 10px;
+}
+
+.pakaian {
+    background-color: #ff4747;
+    padding: 20px;
+    border: 5px double aqua;
+    margin: 10px;
+}
+
+h1 {
+    color: black;
+    font-size: 24px;
+}
+
+h2 {
+    color: black;
+    font-size: 20px;
+}
+
+p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+}
