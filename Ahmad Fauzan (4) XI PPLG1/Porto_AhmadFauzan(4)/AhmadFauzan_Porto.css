@@ -1,0 +1,117 @@
+*{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to left,rgb(255, 255, 51), rgb(70, 255, 70)50%);
+    
+}
+
+#profile {
+    order: 1;
+    text-align: left;
+    margin-left: 2cm;
+    margin-bottom: 1cm;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.image-right {
+    position: relative;
+    order: 2;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 16px;
+    border-bottom: 1px solid #333;
+}
+
+.navbar-left {
+    color: #000000;
+    font-weight: bold;
+    margin-left: 2cm;
+}
+
+.navbar-right a {
+    color: #333;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+    transition: border-bottom 0.3s ;
+    font-weight: bold;
+    position: relative;
+}
+
+.navbar-right a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar-right a:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.navbar-right a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    border-bottom: 1,5px solid #000000;
+}
+
+.skillfile {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+.skillfile {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.skill {
+    margin: 10px 0;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.skill-bar {
+    height: 20px;
+}
+
+.skill-level {
+    height: 20px;
+    background-color: #ff0;
+    width: 0;
+    transition: width 2s ease-in-out;
+}

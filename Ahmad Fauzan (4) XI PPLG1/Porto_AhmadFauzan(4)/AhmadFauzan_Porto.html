@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Portofolio</title>
+    <link rel="stylesheet" href="AhmadFauzan_Porto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,900&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <div class="navbar">
+        <div class="navbar-left">Ahmad Fauzan</div>
+        <div class="navbar-right">
+            <a href="AhmadFauzan_Porto.html">Home</a>
+            <a href="AhmadFauzan_Projects.html">Projects</a>
+            <a href="#social-media">Social Media</a>
+        </div>
+    </div>    
+</head>
+<body>
+    <hr>
+    <img src="ojan.jpg" alt="Gambar Saya" class="image-right">
+    <div id="profile">
+        <h2>Helo Im Ahmad Fauzan</h2>
+        <p>Perkenalkan nama panjang saya Ahmad Fauzan Misbakhul Anam. Saya adalah siswa aktif di kelas XI PPLG 1, Jurusan Pengembangan Perangkat Lunak dan Gim. Saya hobi bermain bola basket , bermain games, dan bahkan codingg. Saya memiliki ketertarikan dengan pengembangan perangkat lunak dan akan selalu berusaha belajar lebih banyak lagi.</p>
+        <div class="skillfile">
+            <div class="skill">
+                <div class="skill-name">HTML dan CSS</div>
+                <div class="skill-bar" data-skill-level="60">
+                    <div class="skill-level"></div>
+                </div>
+            </div>
+           
+            <div class="skill">
+                <div class="skill-name">Java dan JavaScript</div>
+                <div class="skill-bar" data-skill-level="20">
+                    <div class="skill-level"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Django Python</div>
+                <div class="skill-bar" data-skill-level="20">
+                    <div class="skill-level"></div>
+                </div>
+            </div>
+        </div>
+        <p>Saya cukup mahir dalam membuat struktur dan tampilan website, memiliki pengetahuan dasar dalam pembuatan aplikasi dan interaktivitas website, serta memiliki pengetahuan dasar dalam framework Django untuk pengembangan web dengan Python.
+        </p>
+    </div>
+    <script>
+        window.onload = function() {
+            var skillBars = document.getElementsByClassName('skill-bar');
+            for (var i = 0; i < skillBars.length; i++) {
+            var skillLevel = skillBars[i].getElementsByClassName('skill-level')[0];
+            skillLevel.style.width = skillBars[i].getAttribute('data-skill-level') + '%';
+            }
+        };
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+*{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(to left,rgb(255, 255, 51), rgb(70, 255, 70)50%);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Menempatkan elemen ke sebelah kiri */
+    height: 100%;
+    padding-top: 30px;
+    padding-left: 40px; /* Memberikan sedikit ruang di sebelah kiri */
+}
+h2 {
+    padding-top: 40px;
+    align-self: flex-start; /* Menempatkan h2 ke sebelah kiri */
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 16px;
+    border-bottom: 1px solid #333;
+}
+
+.navbar-left {
+    color: #000000;
+    font-weight: bold;
+    margin-left: 2cm;
+}
+
+.navbar-right a {
+    color: #333;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+    transition: border-bottom 0.3s ;
+    font-weight: bold;
+    position: relative;
+}
+
+.navbar-right a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar-right a:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.navbar-right a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    border-bottom: 1,5px solid #000000;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 60%; /* Mengubah lebar card menjadi 60% */
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    color: black;
+    position: relative;
+    background-color: rgb(255, 255, 51); /* Mengubah warna latar belakang card menjadi kuning */
+}
+
+.project-image {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+.project-info {
+    padding: 20px;
+    width: 80%; /* Mengubah lebar info proyek menjadi 80% */
+    margin: auto; /* Membuat info proyek berada di tengah card */
+    color: black;
+}
+.project-info button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+    padding: 2px 16px;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

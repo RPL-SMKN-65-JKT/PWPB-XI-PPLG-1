@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,900&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+    *{
+        font-family: 'Lato', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+    }
+    body {
+        height: 100vh;
+        background: linear-gradient(to left,rgb(255, 255, 51), rgb(70, 255, 70)50%);
+    }
+    .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 16px;
+    border-bottom: 1px solid #333;
+    } 
+
+    .navbar-left {
+    color: #000000;
+    font-weight: bold;
+    margin-left: 2cm;
+    }
+
+    .navbar-right a {
+    color: #333;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+    transition: border-bottom 0.3s ;
+    font-weight: bold;
+        position: relative;
+    }
+
+    .navbar-right a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    .navbar-right a:hover {
+        background-color: transparent;
+        color: black;
+    }
+
+    .navbar-right a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        border-bottom: 1,5px solid #000000;
+    }
+    .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 4cm;
+    }
+    .card {
+    background-color: white;
+    border-radius: 5px;
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 15px;
+    }
+    .card:nth-child(3) {
+    width: 100%;
+    }
+    .card img {
+    width: 45px;
+    height: auto;
+    }
+    button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    }
+    </style>
+    <div class="navbar">
+        <div class="navbar-left">Ahmad Fauzan</div>
+        <div class="navbar-right">
+            <a href="AhmadFauzan_Porto.html">Home</a>
+            <a href="AhmadFauzan_Projects.html">Projects</a>
+            <a href="AhmadFauzan_Conntact.html">Social Media</a>
+        </div>
+    </div>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+          <img src="waimg.png" alt="WhatsApp">
+          <h3>WhatsApp</h3>
+          <p>+62877-4160-2509</p>
+          <a href="api.whatsapp.com/send?phone=6287741602509" target="_blank"><button>WhatsApp</button></a>
+        </div>
+      
+        <div class="card">
+          <img src="pngkit_email-png_136559.png" alt="Email">
+          <h3>Email</h3>
+          <p>fauzananamkc@gmail.com</p>
+          <a href="mailto:fauzananamkc@gmail.com" target="_blank"><button>E-Mail</button></a>
+        </div>
+      
+        <div class="card">
+          <img src="pngkit_social-media-logos-png_7617.png" alt="Instagram">
+          <h3>Instagram</h3>
+          <p>ahmdfzn_6</p>
+          <a href="https://www.instagram.com/ahmdfzn_6/" target="_blank"><button>Instagram</button></a>
+        </div>
+      </div>
+      
+</body>
+</html>
