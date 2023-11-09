@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Baloo Bhai 2", cursive;
+  background-image: url(background.png);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.container {
+  width: 900px;
+  margin: auto;
+  background-color: #ffafcc;
+  padding: 20px;
+}
+.navigasi {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px 40px;
+}
+.menu_list li {
+  gap: 40px;
+  display: inline-block;
+  margin-top: 8px;
+}
+.menu_list {
+  margin-left: 300px;
+}
+.list {
+  height: 30px;
+  width: 80px;
+  background-color: #ff0a54;
+  border: 3px solid #333;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 17px;
+}
+.list:hover {
+  background-color: #b80037;
+}
+.list a {
+  color: white;
+  font-weight: 600;
+}
+.movie {
+  text-align: center;
+  font-size: 35px;
+}
+.banner {
+  margin: 20px auto 0;
+  height: 300px;
+  width: 300px;
+  background-image: url(./banner.jpg);
+  background-position: -230px -360px;
+  border: skyblue 5px solid;
+  border-radius: 12px;
+}
+.barbie {
+  color: white;
+  padding: 15px;
+  background-image: linear-gradient(to bottom, #ff4f84 50%, #ff2365 100%);
+  border-radius: 12px;
+  height: 200px;
+  width: 550px;
+  margin: auto;
+  margin-top: 10px;
+  text-align: justify;
+}
+.header {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 35px;
+}
+.content {
+  place-items: center;
+  text-align: center;
+}
+.deskripsi h3 {
+  font-size: 40px;
+}
+.deskripsi p {
+  padding-inline: 50px;
+}
+.gambar {
+  width: 350px;
+}
+.follow {
+  font-family: "Baloo Bhai 2", cursive;
+  width: 180px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 20px;
+  padding: 2px 2px;
+  margin-top: 12px;
+  border-radius: 0.313rem;
+  cursor: pointer;
+  background-color: #ff0a54;
+}
+.follow:hover {
+  background-color: #b80037;
+}
+.footer {
+  margin-top: 30px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
