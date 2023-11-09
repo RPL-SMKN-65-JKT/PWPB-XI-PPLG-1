@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #ad1400;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-image: url('C:\Users\Ilham\Downloads\simple.jpg');
+  }
