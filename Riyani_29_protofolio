@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portofolio Riyani</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .profile {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            color: green;
+            
+         }
+        .skills {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            color: blue;
+        }
+        .projects {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            color: pink;
+        }
+        .social-media {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Portofolio Riyani</h1>
+
+    <div class="profile">
+        <h2>Profile Diri</h2>
+        <p>Nama: Riyani</p>
+        <p>tanggal lahir:6 Desember 2006</p>
+        <p>tempat tinggal:jl prumpung tenggah</p>
+        <p>Kelas:11 RPL1</p>
+        <p>Sekolah: SMKN 65</p>
+    </div>
+
+    <div class="skills">
+        <h2>Skill & Interest</h2>
+        <p>marketing skils</p>
+    </div>
+
+    <div class="projects">
+        <h2>Project Web yang Pernah Dibuat</h2>
+        <p>Web Playlist Film dan Lagu Favorite</p>
+    </div>
+
+    <div class="social-media">
+        <h2>Link Social Media</h2>
+        <p><a href="https://instagram.com/ryni_020?igshid=MTI3cmY2eWllMWVxdA==" target="_blank">Instagram</a></p>
+    </div>
+</body>
+</html>
