@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #363434;
+  font-family: "Poppins";
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+  color: aqua;
+}
+h1 span {
+  color: rgb(41, 41, 199);
+}
+.navigasi {
+  text-align: center;
+  margin-top: 20px;
+}
+.navigasi li {
+  display: inline-block;
+  border: 3px solid #333;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 2px 2px;
+  padding-inline: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #00bbf9;
+}
+.navigasi li:hover {
+  background-color: #2e8ab4;
+}
+.navigasi a {
+  color: white;
+}
+.container {
+  width: 900px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+  margin-top: 14px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 0;
+}
+.konten img {
+  width: 400px;
+  height: 170px;
+  object-fit: cover;
+
+  border-radius: 5px;
+}
+.konten h1 {
+  text-align: left;
+}
+.tengah {
+  grid-column: span 2;
+  margin-top: 15px;
+  margin: auto;
+  text-align: center;
+  margin-top: 5px;
+}
+.tengah h2 {
+  color: aquamarine;
+}
+.kiri-bawah img {
+  width: 300px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 5px;
+}
