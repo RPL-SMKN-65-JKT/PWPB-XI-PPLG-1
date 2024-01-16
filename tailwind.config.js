@@ -8,10 +8,15 @@ export default {
     theme: {
         container: {
             center: true,
+            padding: "16px",
         },
         extend: {
             colors: {
-                coffe: "#b6895b",
+                coffe: "#d1b599",
+                secondary: "#334155",
+            },
+            screens: {
+                "2xl": "1320px",
             },
         },
     },
