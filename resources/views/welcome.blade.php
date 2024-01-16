@@ -107,7 +107,7 @@
                         >
                             Halo semua , saya
                             <span class="text-4xl font-bold block text-black"
-                                >Muhammad Dhafin Haron Wdadsndiansib</span
+                                >Muhammad Dhafin Haron</span
                             >
                         </h1>
                         <h2
