@@ -17,7 +17,7 @@
     </head>
     <body>
         <header
-            class="bg-transparent absolute top-0 left-0 flex w-full items-center z-10"
+            class="bg-transparent bg-[#b6895b] absolute top-0 left-0 flex w-full items-center z-10"
         >
             <div class="container">
                 <div class="flex items-center justify-between relative">
@@ -66,7 +66,7 @@
                                 </li>
                                 <li class="group">
                                     <a
-                                        href="#portfolio"
+                                        href="#portofolio"
                                         class="text-base text-dark hover:translate-y-[-3px] hover:translate-x-[-5px] duration-300 py-2 mx-8 flex group-hover:text-coffe"
                                         >Portfolio</a
                                     >
@@ -113,12 +113,17 @@
                         <h2
                             class="font-medium text-secondary text-lg mb-5 lg:text-2xl"
                         >
-                            Programmer &
+                            Programmer |
                             <span class="text-dark font-semibold">Student</span>
                         </h2>
                         <p class="font-medium text-lg text-secondary mb-10">
                             Web ini berisi hal-hal mengenai diri saya!
                         </p>
+                        <a
+                            href="#contact"
+                            class="py-4 px-8 bg-coffe rounded-full hover:opacity-80 duration-300 hover:shadow-lg"
+                            >Hubungi Saya</a
+                        >
                     </div>
                     <div class="w-full self-end px-4 lg:w-1/2">
                         <div class="relative lg:mt-10 lg:ml-20">
@@ -133,36 +138,35 @@
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path
-                    fill="#ffffff"
+                    fill="#fff"
                     fill-opacity="1"
                     d="M0,160L48,138.7C96,117,192,75,288,96C384,117,480,203,576,202.7C672,203,768,117,864,101.3C960,85,1056,139,1152,154.7C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
                 ></path>
             </svg>
         </section>
 
-        <section class="pt-15 pb-32" id="about">
+        <section class="pt-36 pb-32" id="about">
             <div class="container">
                 <div class="flex flex-wrap">
                     <div class="w-full px-4 self-center lg:w-1/2">
                         <img
                             src=" {{ asset('assets/img/Dhafin.jpg') }}  "
                             alt="about Dhafin"
-                            class="w-[380px] rounded-md"
+                            class="w-[380px] rounded-md mx-auto"
                         />
                     </div>
                     <div class="w-full px-4 lg:w-1/2">
-                        <h1 class="font-semibold text-3xl mt-3">
-                            Tentang Saya
-                        </h1>
+                        <h1 class="font-bold text-3xl mb-3">Tentang Saya</h1>
                         <p
                             class="text-lg self-end font-semibold text-secondary mr-22 lg:w-3/4 sm:mt-5 sm:w-[400px]"
                         >
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Vel harum iste ad inventore consectetur minima
-                            est consequuntur totam maiores. Architecto
-                            voluptatem repellat, dolorum doloribus delectus
-                            optio voluptatibus necessitatibus placeat officiis
-                            aliquid consequuntur, quas nisi ab?
+                            Halo, saya Dhafin 16 tahun saya bersekolah di Smkn
+                            65 jakarta, saya tinggal di Jakarta Timur dan saya
+                            dua bersaudara. Hobi saya dalam keseharian adalah
+                            ngoding dan bermain basket mimpi saya di masa depan
+                            bisa menjadi seorang programmer sukses dan bisa
+                            membahagiakan keluarga. ikuti media sosial saya di
+                            bawah ini ya!
                         </p>
                         <div class="flex items-center mt-5">
                             <!-- Youtube -->
@@ -262,12 +266,112 @@
             </div>
         </section>
 
-        <section class="pt-36 pb-16">
+        <section class="pt-36 pb-16 bg-[#b6895b]" id="portofolio">
             <div class="container">
                 <div class="w-full px-4">
-                    <h1>My SKills   </h1>
+                    <div class="max-w-xl mx-auto text-center mb-16">
+                        <h2 class="text-lg text-coffe mb-2 font-semibold">
+                            Portofolio
+                        </h2>
+                        <h4
+                            class="text-3xl font-bold text-dark mb-4 lg:text-4xl"
+                        >
+                            Project Terbaru
+                        </h4>
+                        <p
+                            class="text-md font-medium lg:text-lg text-secondary"
+                        >
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Deleniti, et quo quos expedita inventore aut!
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+                >
+                    <div class="mb-12 p-4 md:w-1/2">
+                        <div
+                            class="rounded-md shadow-md overflow-hidden bg-white"
+                        >
+                            <img
+                                src=" {{ asset('assets/img/bk.png') }} "
+                                alt=""
+                            />
+                            <h1
+                                class="text-2xl font-semibold text-black mb-3 mt-5"
+                            >
+                                Landing Page
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Deserunt est pariatur earum
+                                accusamus ratione amet!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-12 p-4 md:w-1/2">
+                        <div
+                            class="rounded-md shadow-md overflow-hidden bg-white"
+                        >
+                            <img
+                                src=" {{ asset('assets/img/bk.png') }} "
+                                alt=""
+                            />
+                            <h1
+                                class="text-2xl font-semibold text-black mb-3 mt-5"
+                            >
+                                Landing Page
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Deserunt est pariatur earum
+                                accusamus ratione amet!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-12 p-4 md:w-1/2">
+                        <div
+                            class="rounded-md shadow-md overflow-hidden bg-white"
+                        >
+                            <img
+                                src=" {{ asset('assets/img/bk.png') }} "
+                                alt=""
+                            />
+                            <h1
+                                class="text-2xl font-semibold text-black mb-3 mt-5"
+                            >
+                                Landing Page
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Deserunt est pariatur earum
+                                accusamus ratione amet!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-12 p-4 md:w-1/2">
+                        <div
+                            class="rounded-md shadow-md overflow-hidden bg-white"
+                        >
+                            <img
+                                src=" {{ asset('assets/img/bk.png') }} "
+                                alt=""
+                            />
+                            <h1
+                                class="text-2xl font-semibold text-black mb-3 mt-5"
+                            >
+                                Landing Page
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Deserunt est pariatur earum
+                                accusamus ratione amet!
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <script src="{{ asset('assets/img/js/script.js') }} "></script>
     </body>
 </html>
