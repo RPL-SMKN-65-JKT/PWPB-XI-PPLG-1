@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title>Muhamad Zafar Syah Portfolio</title>
+        <title>Muhamad Zafar Syah</title>
         <link rel="shortcut icon" href="{{ url('assets//img/icon.png') }}" type="image/x-icon">
 
         <!-- Style  -->
