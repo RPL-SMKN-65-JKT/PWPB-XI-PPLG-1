@@ -1,0 +1,54 @@
+.contact-form form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: rgb(48, 47, 47);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.contact-form form .btn {
+    display: inline-block;
+    background: orange;
+    color: black;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 225px;
+    transition: ease 0.2s;
+    cursor: pointer;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.contact-form form .btn:hover {
+    border: 2px solid orange;
+    color: white;
+    background: transparent;
+    transform: scale(1.1);
+}
+#confirmationBox {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    z-index: 999;
+}

@@ -1,0 +1,70 @@
+html {
+    scroll-behavior: smooth;
+}
+.text {
+    position: absolute;
+    right: 50%;
+    margin-top: 25px;
+    transform: translate(50%, -50%);
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 30px;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+        1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+        1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+        1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+.kk {
+    background-color: #fff;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    border: 0.1px solid black;
+}
+.kk:hover {
+    border: none;
+}
+.kk i {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+.instagram:hover {
+    background: #d6249f;
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    box-shadow: 0 14px 27px -13px purple;
+}
+.linkin:hover {
+    background-image: linear-gradient(to right, #00c6fb 0%, #005bea 100%);
+    color: white;
+    box-shadow: 0 14px 27px -13px #038bec;
+}
+.twitter:hover {
+    background: #1da1f2;
+    color: white;
+    box-shadow: 0 14px 27px -13px #038bec;
+}
+.github:hover {
+    background: #24292e;
+    color: white;
+    box-shadow: 0 14px 27px -13px black;
+}
