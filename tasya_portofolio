@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-blue-500 text-white text-center py-16">
+        <h1 class="text-4xl">Tasya Erika</h1>
+    </header>
+    <nav class="flex justify-center py-5 bg-gray-200">
+        <ul class="flex space-x-5">
+            <li><a href="#about" class="hover:text-blue-500">About</a></li>
+            <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+            <li><a href="#portfolio" class="hover:text-blue-500">Portfolio</a></li>
+            <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl mb-4">Saya adalah siswi SMKN 65 Jakarta, saya menduduki bangku kelas xi pplg 1. saya hobi mendengarkan musiik dan memasak/membuat kue</h2>
+            <p class="text-lg mb-8">
+                <p>Email: erikatasya55@gmail.com</p>
+                <p>Github: https://github.com/TasyaErika</p>
+            <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Lihat Lebih Lanjut</button>
+        </div>
+
+</section>
+
+    <section id="skills" class="py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl text-center mb-8">Pengalaman: Membuat website, portofolio</h2>
+            <div class="flex flex-wrap justify-center">
+                <div class="w-64 m-4 text-center">
+                    <img src="https://via.placeholder.com/300" alt="Project Image" class="mb-3">
+                    <h3 class="text-xl mb-2">HTML</h3>
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="w-64 m-4 text-center">
+                    <img src="css.png" alt="CSS" class="w-16 h-16 mx-auto">
+                    <h3 class="text-xl mb-2">CSS</h3>
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
