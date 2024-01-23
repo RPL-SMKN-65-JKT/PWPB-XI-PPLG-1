@@ -1,0 +1,72 @@
+.html {
+    animation: html 20s;
+    width: 90%;
+    transition-delay: 30s;
+}
+
+.css {
+    animation: css 20s;
+    width: 80%;
+}
+
+.js {
+    animation: js 20s;
+    width: 50%;
+}
+
+.skill-per {
+    height: 14px;
+    background: #b6895b;
+    border-radius: 3px;
+    position: relative;
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -16px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+}
+
+@keyframes html {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes js {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
+}
