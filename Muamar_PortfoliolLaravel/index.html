@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Laravel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Onest:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" >
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" >
+  <link rel="stylesheet" href="css/style.css" >
+
+</head>
+<style>
+  .close-menu,
+.open-menu {
+  position: absolute;
+  cursor: pointer;
+  display: none;
+}
+
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 73%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+
+  .menu li {
+    margin-top: 40px;
+  }
+
+  .menu li a {
+    padding: 10px;
+  }
+
+  .close-menu,
+  .open-menu {
+    display: block;
+  }
+
+  #check:checked ~ .menu {
+    right: 0;
+  }
+}
+
+</style>
+<body class="bg-gray-100">
+<header>
+  <nav class="bg-white sticky w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <ul class="navigation max-w-[90vw] flex flex-wrap justify-between items-center relative mx-auto py-8">
+      <a class="logo" href="#">
+        <h3 class="font-bold text-2xl">Ahmad Muamar</h3>
+      </a>
+      <input type="checkbox" id="check" />
+
+      <span class="menu flex [&>li]:pl-8 [&>li>a]:text-center [&>li>a]:relative [&>li>a]:transition [&>li>a]:duration-200 [&>li>a]:ease-in-out [&>li>a]:font-medium [&>li>a]:text-lg">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Contact</a></li>
+
+        <label for="check" class="close-menu">X</label>
+      </span>
+
+      <label for="check" class="open-menu">Menu</label>
+    </ul>
+  </nav>
+</header>
+  <!-- -------------------------------------Navigation ends here-------------------------------------- -->
+  <section id="home" class="page-section">
+
+    <div class="bg-gradient-blend" style="padding-top:60px;">
+      <div class="container mx-auto sm:px-4">
+        <div class="flex flex-wrap ">
+          <div class="lg:w-1/4 pr-4 pl-4 mx-auto">
+            <div class="img-mask rounded-full"><img class="w-1/2 rounded-full" src="assets/img/muamar.jpg"  alt="" /></div>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+        <div class="flex flex-wrap " style="padding-bottom:80px;">
+          <div class="md:w-4/5 pr-4 pl-4 lg:w-3/4 pr-4 pl-4 col-xxl-8 mx-auto text-center">
+            <h2 class="fs-5 uppercase text-black-50 mb-3 fw-semibold">Ahamad Muamar</h2>
+            <h3 class="display-5 fw-bold mb-4">Saya Murid dari <span class="georgia fst-italic">SMKN 65 Jakarta</span> jurusan Rekayasa Perangkat Lunak.</h3>
+            <p class="fs-5 fw-medium text-black-50">saya berumur 18 Tahun yang lahir di Jakarta, Indonesia. Saat ini baru mempelajari tentang web development.</p>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+      <div class="overflow-hidden">
+        <div class="divider text-white mx-n2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 92.26"><path fill="currentColor" d="M1206,21.2c-60-5-119-36.92-291-5C772,51.11,768,48.42,708,43.13c-60-5.68-108-29.92-168-30.22-60,.3-147,27.93-207,28.23-60-.3-122-25.94-182-36.91S30,5.93,0,16.2V92.26H1440v-87l-30,5.29C1348.94,22.29,1266,26.19,1206,21.2Z"/></svg>
+        </div>
+      </div>
+      <!-- /.overflow-hidden -->
+    </div>
+    <!-- /section -->
+ 
+   <section>
+
+  <section id="services" class="page-section bg-gray-100">
+   
+    <div class="section-padd">
+      <div class="container mx-auto sm:px-4 pp2">
+        <div class="flex flex-wrap  gx-lg-0 gy-5 items-center">
+          <div class="lg:w-2/5 pr-4 pl-4 lg:mx-1/6 lg:order-2">
+            <h2 class="display-6 mb-4 fw-semibold">My skills <span class="georgia fst-italic">expertise</span></h2>
+            <p class="text-xl font-light fs-lg fw-medium">The full service I am offering is specifically designed to meet your business needs.</p>
+            <p class="text-gray-700">Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis elit interdum. Duis mollis, est non commodo luctus, nisi erat ligula magna mollis.</p>
+            <a href="#" class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600 rounded-full py-2 px-4 mt-4 px-5 py-3">More Details</a>
+          </div>
+          <!-- /column -->
+          <div class="lg:w-1/2 pr-4 pl-4">
+            <div class="flex flex-wrap  g-5 text-center">
+              <div class="md:w-1/2 pr-4 pl-4">
+                <div class="flex flex-wrap ">
+                  <div class="lg:w-full pr-4 pl-4">
+                    <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 shadow-lg mb-5 border-0">
+                      <div class="flex-auto p-6 p-12">
+                        <img class="w-1/2 m-auto" src="assets/img/first-main-icon.png">
+                        <h3 class="fs-5 mb-3 pt-1 fw-semibold">HTML</h3>
+                        <p class="mb-4 text-black-50">HyperText Markup Language adalah bahasa markah standar untuk dokumen yang dirancang untuk ditampilkan di peramban internet.</p>
+                        <a href="#" class="link-primary fw-semibold">Learn More &#8594</a>
+                      </div>
+                      <!--/.card-body -->
+                    </div>
+                    <!--/.card -->
+                  </div>
+                  <!-- /column -->
+                  <div class="lg:w-full pr-4 pl-4">
+                    <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 shadow-lg mb-5 border-0">
+                      <div class="flex-auto p-6 p-12">
+                      <img class="w-1/2 m-auto" src="assets/img/second-main-icon.png">
+                        <h3 class="fs-5 mb-3 pt-1 fw-semibold">CSS</h3>
+                        <p class="mb-4 text-black-50"> Cascading Style Sheet merupakan aturan untuk mengatur beberapa komponen dalam sebuah web sehingga akan lebih terstruktur dan seragam.</p>
+                        <a href="#" class="link-primary fw-semibold">Learn More &#8594</a>
+                      </div>
+                      <!--/.card-body -->
+                    </div>
+                    <!--/.card -->
+                  </div>
+                  <!-- /column -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!-- /column -->
+              <div class="md:w-1/2 pr-4 pl-4">
+                <div class="flex flex-wrap ">
+                  <div class="lg:w-full pr-4 pl-4 md:order-2">
+                    <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 shadow-lg mb-5 md:mb-0 border-0">
+                      <div class="flex-auto p-6 p-12">
+                        <img class="w-1/2 m-auto" src="assets/img/third-main-icon.png">
+                        <h3 class="fs-5 mb-3 pt-1 fw-semibold">JAVA</h3>
+                        <p class="mb-4 text-black-50"> Java adalah bahasa pemrograman yang dapat dijalankan di berbagai komputer termasuk telepon genggam. Bahasa ini awalnya dibuat oleh James Gosling saat masih bergabung di Sun Microsystems, yang saat ini merupakan bagian dari Oracle dan dirilis tahun 1995.</p>
+                        <a href="#" class="link-primary fw-semibold">Learn More &#8594</a>
+                      </div>
+                      <!--/.card-body -->
+                    </div>
+                    <!--/.card -->
+                  </div>
+                  <!-- /column -->
+                  <div class="lg:w-full pr-4 pl-4">
+                    <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 shadow-lg md:mb-12 lg:mt-12 border-0">
+                      <div class="flex-auto p-6 p-12">
+                      <img class="w-1/2 m-auto" src="assets/img/fourth-main-icon.png">
+                        <h3 class="fs-5 mb-3 pt-1 fw-semibold">MySQL</h3>
+                        <p class="mb-4 text-black-50">   MySQL adalah sebuah perangkat lunak sistem manajemen basis data SQL atau DBMS yang multialur, multipengguna, dengan sekitar 6 juta instalasi di seluruh dunia.</p>
+                        <a href="#" class="link-primary fw-semibold">Learn More &#8594</a>
+                      </div>
+                      <!--/.card-body -->
+                    </div>
+                    <!--/.card -->
+                  </div>
+                  <!-- /column -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!-- /column -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /column -->
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+        <nav class="flex flex-wrap list-none pl-0 mb-0 social justify-center pt-5 pb-2">
+          <a href="https://www.instagram.com/ahmdmmuammarr"><i class="lni lni-instagram-fill"></i></a>
+          <a href="https://github.com/ahmadmuamar2"><i class="lni lni-github"></i></a>
+        </nav>
+        <p class="flex flex-wrap list-none pl-0 mb-0 social justify-center pt-5 pb-2">© 2023 Ahmad Muamar. All rights reserved.</p>
+        <!-- /.social -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    const button = document.querySelector('#menu-button');
+const menu = document.querySelector('#menu');
+
+
+button.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
+
+  </script>
+</body>
+
+</html>
